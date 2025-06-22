@@ -25,3 +25,116 @@ webpack compiled successfully
 Compiling...
 Compiled successfully!
 webpack compiled successfully
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/SimpleApp.js
+  Line 12:42:   Unnecessary escape character: \/  no-useless-escape
+  Line 12:100:  Unnecessary escape character: \/  no-useless-escape
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/SimpleApp.js
+  Line 12:42:   Unnecessary escape character: \/  no-useless-escape
+  Line 12:100:  Unnecessary escape character: \/  no-useless-escape
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/SimpleApp.js
+  Line 12:42:   Unnecessary escape character: \/  no-useless-escape
+  Line 12:100:  Unnecessary escape character: \/  no-useless-escape
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/SimpleApp.js
+  Line 12:42:   Unnecessary escape character: \/  no-useless-escape
+  Line 12:100:  Unnecessary escape character: \/  no-useless-escape
+
+webpack compiled with 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/SimpleApp.js
+Syntax error: Unexpected token (12:71) (12:71)
+ERROR in ./src/SimpleApp.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/yamamotomayumi/youtube-content-generator/frontend/src/SimpleApp.js: Unexpected token (12:71)
+
+  10 |
+  11 |   const extractVideoId = (url) => {
+> 12 |     const regex = /(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?)\//|.*[?&]v=)|youtu\.be\/)([^"&?/\s]{11})/;
+     |                                                                        ^
+  13 |     const match = url.match(regex);
+  14 |     return match ? match[1] : null;
+  15 |   };
+    at constructor (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:363:19)
+    at FlowParserMixin.raise (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:6609:19)
+    at FlowParserMixin.unexpected (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:6629:16)
+    at FlowParserMixin.parseExprAtom (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:11378:16)
+    at FlowParserMixin.parseExprAtom (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:4776:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:11012:23)
+    at FlowParserMixin.parseUpdate (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10997:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10977:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10830:61)
+    at FlowParserMixin.parseExprOpBaseRightExpr (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10917:34)
+    at FlowParserMixin.parseExprOpRightExpr (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10912:21)
+    at FlowParserMixin.parseExprOp (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10878:27)
+    at FlowParserMixin.parseExprOps (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10839:17)
+    at FlowParserMixin.parseMaybeConditional (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10812:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10765:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:3561:18)
+    at /Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10734:39
+    at FlowParserMixin.allowInAnd (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:12356:16)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10734:17)
+    at FlowParserMixin.parseVar (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:13303:91)
+    at FlowParserMixin.parseVarStatement (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:13149:10)
+    at FlowParserMixin.parseStatementContent (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:12770:23)
+    at FlowParserMixin.parseStatementLike (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:12685:17)
+    at FlowParserMixin.parseStatementLike (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:2928:24)
+    at FlowParserMixin.parseStatementListItem (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:12665:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:13235:61)
+    at FlowParserMixin.parseBlockBody (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:13228:10)
+    at FlowParserMixin.parseBlock (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:13216:10)
+    at FlowParserMixin.parseFunctionBody (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:12035:24)
+    at /Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:2902:63
+    at FlowParserMixin.forwardNoArrowParamsConversionAt (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:3078:16)
+    at FlowParserMixin.parseFunctionBody (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:2902:12)
+    at FlowParserMixin.parseArrowExpression (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:12010:10)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:11620:12)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:3603:18)
+    at FlowParserMixin.parseExprAtom (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:11262:23)
+    at FlowParserMixin.parseExprAtom (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:4776:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:11012:23)
+    at FlowParserMixin.parseUpdate (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10997:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10977:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10830:61)
+    at FlowParserMixin.parseExprOps (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10835:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10812:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10765:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:3561:18)
+    at /Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10734:39
+    at FlowParserMixin.allowInAnd (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:12356:16)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:10734:17)
+    at FlowParserMixin.parseVar (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:13303:91)
+    at FlowParserMixin.parseVarStatement (/Users/yamamotomayumi/youtube-content-generator/frontend/node_modules/@babel/parser/lib/index.js:13149:10)
+
+ERROR in [eslint] 
+src/SimpleApp.js
+  Line 12:71:  Parsing error: Unexpected token (12:71)
+
+webpack compiled with 2 errors
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully

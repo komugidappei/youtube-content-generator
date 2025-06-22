@@ -2,6 +2,7 @@
   "name": "youtube-content-generator-frontend",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://komugidappei.github.io/youtube-content-generator",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
