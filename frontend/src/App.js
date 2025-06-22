@@ -17,7 +17,8 @@ function App() {
     setResults(null);
 
     try {
-      const response = await axios.post('/api/generate', {
+      const apiUrl = process.env.REACT_APP_API_URL || '';
+      const response = await axios.post(`${apiUrl}/api/generate`, {
         youtubeUrl: youtubeUrl.trim()
       });
 
@@ -64,7 +65,8 @@ ${results.titles}
       const timestamp = new Date().toISOString().slice(0, 19).replace(/:/g, '-');
       const filename = `youtube-content-${timestamp}`;
 
-      const response = await axios.post('/api/save', {
+      const apiUrl = process.env.REACT_APP_API_URL || '';
+      const response = await axios.post(`${apiUrl}/api/save`, {
         content: allContent,
         filename: filename
       });
